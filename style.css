@@ -26,7 +26,9 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
+nav a.active {
+  border-bottom: 2px solid white;
+}
 /* ===== Startseite / Hero ===== */
 .hero {
   padding: 60px 20px;
