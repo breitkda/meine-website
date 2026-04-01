@@ -25,7 +25,16 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
 }
+
+nav a:hover {
+  border-bottom: 2px solid white;
+  opacity: 0.85;
+}
+
 nav a.active {
   border-bottom: 2px solid white;
 }
