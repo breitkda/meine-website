@@ -3,43 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine Website</title>
+  <title>Start | Meine Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#home">Start</a></li>
-      <li><a href="#about">Über mich</a></li>
-      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Über mich</a></li>
+      <li><a href="projects.html">Projekte</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <!-- Startbereich -->
-  <section id="home" class="section">
-  <div class="home-container">
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Willkommen auf meiner Website</h1>
+        <p>Ich lerne Webentwicklung und baue meine erste eigene Seite.</p>
+        <a class="button-link" href="projects.html">Meine Projekte ansehen</a>
+      </div>
 
-    <div class="text">
-      <h1>Willkommen</h1>
-      <p>Ich lerne gerade Webentwicklung und baue meine eigene Website.</p>
+      <div class="hero-image">
+        <img src="images/beispielbild.jpg" alt="Porträt oder Projektbild">
+      </div>
     </div>
-
-    <div class="image">
-      <img src="images/beispielbild.jpg" alt="Mein Bild">
-    </div>
-
-  </div>
-</section>
-
-  <!-- Kontakt -->
-  <section id="contact" class="section">
-    <h2>Kontakt</h2>
-    <button id="infoButton">Klick mich</button>
-    <p id="message"></p>
-  </section>
-
-  <script src="script.js"></script>
+  </header>
 </body>
 </html>

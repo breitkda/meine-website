@@ -1,13 +1,15 @@
+/* ===== Allgemein ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
+  color: #222;
 }
 
-/* Navigation */
+/* ===== Navigation ===== */
 nav {
   background-color: #222;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 nav ul {
@@ -16,10 +18,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-nav li {
-  margin: 0 15px;
+  gap: 24px;
 }
 
 nav a {
@@ -28,44 +27,75 @@ nav a {
   font-weight: bold;
 }
 
-/* Sektionen */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  background-color: white;
-  margin: 20px;
-  border-radius: 10px;
+/* ===== Startseite / Hero ===== */
+.hero {
+  padding: 60px 20px;
 }
-/* ===== 4. HOME LAYOUT ===== */
-.home-container {
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-.text {
+.hero-text,
+.hero-image {
   flex: 1;
 }
 
-.image {
-  flex: 1;
-}
-
-.image img {
+.hero-image img {
   width: 100%;
   border-radius: 10px;
+  display: block;
 }
 
-/* ===== 5. Allgemeine Elemente ===== */
-img {
-  max-width: 100%;
+/* ===== Allgemeine Inhaltsseiten ===== */
+.page-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-/* ===== 6. Responsive (IMMER GANZ UNTEN) ===== */
+/* ===== Karten ===== */
+.card {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ===== Button-Link ===== */
+.button-link,
+button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .home-container {
+  .hero-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
   }
 }
