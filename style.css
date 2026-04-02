@@ -25,7 +25,6 @@ p {
 }
 
 /* ===== Navigation ===== */
-/* ===== Navigation ===== */
 .navbar {
   background-color: #222;
   padding: 14px 20px;
@@ -188,36 +187,41 @@ footer {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: inline-block;
-  }
+.menu-toggle {
+  display: inline-block;
+}
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 16px;
-  }
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
 
-  .nav-links.show {
-    display: flex;
-  }
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 
-  .hero {
-    padding: 30px 16px;
-  }
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
 
-  .hero-content {
-    flex-direction: column;
-    padding: 28px;
-    gap: 28px;
-    text-align: center;
-  }
+.nav-links.show {
+  max-height: 300px;
+  opacity: 1;
+}
 
-  .page-content {
-    margin: 24px 16px;
-    padding: 24px;
-  }
+.hero {
+  padding: 30px 16px;
+}
+
+.hero-content {
+  flex-direction: column;
+  padding: 28px;
+  gap: 28px;
+  text-align: center;
+}
+
+.page-content {
+  margin: 24px 16px;
+  padding: 24px;
 }
