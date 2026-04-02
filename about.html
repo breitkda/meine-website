@@ -7,19 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Start</a></li>
-      <li><a href="about.html"class="active">Über mich</a></li>
-      <li><a href="projects.html">Projekte</a></li>
-      <li><a href="contact.html">Kontakt</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar">
+  <div class="nav-top">
+    <a href="index.html" class="logo">Meine Website</a>
+    <button class="menu-toggle" id="menuToggle">☰ Menü</button>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" >Start</a></li>
+    <li><a href="about.html" class="active">Über mich</a></li>
+    <li><a href="projects.html">Projekte</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
 
   <main class="page-content">
     <h1>Über mich</h1>
     <p>Ich lerne gerade HTML, CSS, JavaScript und GitHub.</p>
     <p>Mein Ziel ist es, Websites sauber selbst zu bauen und zu veröffentlichen.</p>
   </main>
+<script src="script.js"></script>
 </body>
 </html>

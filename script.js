@@ -6,3 +6,12 @@ if (button && message) {
     message.textContent = "E-Mail: beispiel@mail.de";
   });
 }
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+}
