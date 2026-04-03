@@ -211,11 +211,24 @@ footer {
   padding: 24px 20px;
   color: #666;
 }
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
 
+.image-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: inline-block;
+      .image-gallery {
+    grid-template-columns: 1fr;
+  }
   }
 
   .nav-links {
