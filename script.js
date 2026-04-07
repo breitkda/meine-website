@@ -33,12 +33,14 @@ links.forEach(link => {
 const galleryImages = document.querySelectorAll(".image-gallery img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const caption = document.getElementById("lightbox-caption");
 
-if (galleryImages.length > 0 && lightbox && lightboxImg) {
+if (galleryImages.length > 0 && lightbox && lightboxImg && caption) {
   galleryImages.forEach(image => {
     image.addEventListener("click", () => {
       lightbox.style.display = "flex";
       lightboxImg.src = image.src;
+      caption.textContent = image.alt;
     });
   });
 

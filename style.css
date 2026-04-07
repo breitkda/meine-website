@@ -254,7 +254,7 @@ footer {
 /* ===== Image Gallery ===== */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 20px 0 30px;
 }
@@ -298,12 +298,23 @@ footer {
 }
 
 .lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
+  max-width: 800px;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
 }
 .image-gallery img {
   cursor: pointer;
+}
+.lightbox-content {
+  text-align: center;
+  color: white;
+}
+
+#lightbox-caption {
+  margin-top: 12px;
+  font-size: 1rem;
+  max-width: 600px;
 }
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
