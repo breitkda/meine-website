@@ -30,3 +30,19 @@ links.forEach(link => {
     menuToggle.textContent = "☰";
   });
 });
+const galleryImages = document.querySelectorAll(".image-gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+if (galleryImages.length > 0 && lightbox && lightboxImg) {
+  galleryImages.forEach(image => {
+    image.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = image.src;
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+}
