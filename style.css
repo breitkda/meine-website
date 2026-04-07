@@ -222,6 +222,65 @@ footer {
   width: 100%;
   border-radius: 10px;
 }
+/* ===== Travel page ===== */
+.travel-hero-image {
+  width: 100%;
+  border-radius: 14px;
+  margin: 20px 0 24px;
+}
+
+.travel-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.info-box {
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.info-box h3 {
+  margin-bottom: 8px;
+}
+
+.info-box p {
+  margin-bottom: 0;
+}
+
+/* ===== Image Gallery ===== */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0 30px;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+}
+/* ===== Project detail page ===== */
+.project-hero-image {
+  width: 100%;
+  border-radius: 14px;
+  margin: 20px 0 24px;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -229,6 +288,16 @@ footer {
       .image-gallery {
     grid-template-columns: 1fr;
   }
+  .travel-info {
+  grid-template-columns: 1fr;
+}
+
+.image-gallery {
+  grid-template-columns: 1fr;
+}
+.project-info {
+  grid-template-columns: 1fr;
+}
   }
 
   .nav-links {
