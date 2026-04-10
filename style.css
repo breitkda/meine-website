@@ -320,19 +320,6 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: inline-block;
-      .image-gallery {
-    grid-template-columns: 1fr;
-  }
-  .travel-info {
-  grid-template-columns: 1fr;
-}
-
-.image-gallery {
-  grid-template-columns: 1fr;
-}
-.project-info {
-  grid-template-columns: 1fr;
-}
   }
 
   .nav-links {
@@ -370,5 +357,31 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .travel-info {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info {
+    grid-template-columns: 1fr;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox {
+    padding: 12px;
+  }
+
+  .lightbox img {
+    max-width: 95vw;
+    max-height: 65vh;
+  }
+
+  #lightbox-caption {
+    font-size: 0.9rem;
+    padding: 0 10px;
   }
 }
